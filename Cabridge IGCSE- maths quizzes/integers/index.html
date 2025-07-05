@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Integers Quiz</title>
+</head>
+<body>
+  <h1>Integers Quiz</h1>
+  <p>1. What is -5 + 3?</p>
+  <input type="text" id="q1"><br><br>
+  <p>2. What is -2 - 6?</p>
+  <input type="text" id="q2"><br><br>
+  <button onclick="checkAnswers()">Submit</button>
+  <p id="result"></p>
+
+  <script>
+    function checkAnswers() {
+      let score = 0;
+      if (document.getElementById('q1').value == '-2') score++;
+      if (document.getElementById('q2').value == '-8') score++;
+      document.getElementById('result').innerText = "You scored " + score + "/2";
+    }
+  </script>
+</body>
+</html>
